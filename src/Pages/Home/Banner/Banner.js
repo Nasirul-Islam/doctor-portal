@@ -25,7 +25,7 @@ const Banner = () => {
                             Your New Smail <br />
                             Starts Here
                         </Typography>
-                        <Typography variant="h6" sx={{ my: 3, fontSize: '14px', fontWeight: 300, color: 'gray' }}>
+                        <Typography variant="subtitle2" sx={{ my: 3, fontSize: '14px', fontWeight: 300, color: 'gray' }}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptate repudiandae cumque rerum eum sed labore perferendis ipsum fuga a!
                         </Typography>
                         <Button variant="contained" style={{ backgroundColor: 'rgb(97, 220, 241)' }}>Get Appointment</Button>

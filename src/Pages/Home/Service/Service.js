@@ -17,7 +17,7 @@ const Service = ({ service }) => {
                     alt="green iguana"
                 />
                 <CardContent>
-                    <Typography variant="h5" component="div">
+                    <Typography variant="subtitle2" component="div">
                         {name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">

@@ -7,7 +7,8 @@ import { Button, Typography } from '@mui/material';
 
 const appointmentBanner = {
     background: `url(${bg})`,
-    backgroundPosition: 'cover',
+    // backgroundPosition: 'center',
+    backgroundSize: 'cover',
     backgroundColor: 'rgba(45, 58, 74, .7)',
     backgroundBlendMode: 'darken, luminosity',
     marginTop: "170px"
@@ -29,13 +30,13 @@ const AppointmentBanner = () => {
                     textAlign: 'left'
                 }}>
                     <Box>
-                        <Typography variant="h6" sx={{ mb: 5 }} style={{ color: 'rgb(97, 220, 241)' }}>
+                        <Typography variant="subtitle2" sx={{ mb: 5 }} style={{ color: 'rgb(97, 220, 241)' }}>
                             Appoinment
                         </Typography>
                         <Typography variant="h4" style={{ color: 'white' }}>
                             Make an Appoinment today
                         </Typography>
-                        <Typography variant="h6" sx={{ my: 5 }} style={{ color: 'white', fontSize: '16px', fontWeight: 300 }}>
+                        <Typography variant="subtitle2" sx={{ my: 5 }} style={{ color: 'white', fontSize: '16px', fontWeight: 300 }}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem quisquam totam nobis qui rem amet pariatur. Quia dolorem necessitatibus quae a. Accusamus, quo officia?
                         </Typography>
                         <Button variant="contained" style={{ backgroundColor: 'rgb(97, 220, 241)' }}>LEARN MORE</Button>
