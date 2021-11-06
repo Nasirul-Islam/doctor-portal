@@ -15,13 +15,17 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import { Button, Grid } from '@mui/material';
+import Calendar from '../../Shared/Calendar/Calendar';
+import Appointments from '../Appointments/Appointments';
+import { NavLink } from 'react-router-dom';
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-
+    const [date, setDate] = React.useState(new Date());
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
@@ -30,19 +34,11 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
+            <NavLink style={{ textDecoration: 'none', color: 'red' }} to="/appointment">
+                <Button color="inherit">Appointment</Button>
+            </NavLink>
             <List>
                 {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>
-            <Divider />
-            <List>
-                {['All mail', 'Trash', 'Spam'].map((text, index) => (
                     <ListItem button key={text}>
                         <ListItemIcon>
                             {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -77,7 +73,7 @@ function Dashboard(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                        Responsive drawer
+                        Dashboard
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -86,7 +82,6 @@ function Dashboard(props) {
                 sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
                 aria-label="mailbox folders"
             >
-                {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
                 <Drawer
                     container={container}
                     variant="temporary"
@@ -119,7 +114,19 @@ function Dashboard(props) {
             >
                 <Toolbar />
                 <Typography paragraph>
-                    content here
+                    <Grid container spacing={2}>
+                        <Grid item xs={12} md={5}>
+                            <Calendar
+                                date={date}
+                                setDate={setDate}
+                            ></Calendar>
+                        </Grid>
+                        <Grid item xs={12} md={7}>
+                            <Appointments
+                                date={date}
+                            ></Appointments>
+                        </Grid>
+                    </Grid>
                 </Typography>
             </Box>
         </Box>

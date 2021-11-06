@@ -6,37 +6,37 @@ const bookings = [
     {
         id: 1,
         name: 'Teeth Protection',
-        time: '11:00AM - 12:00PM',
+        time: '1:00PM - 3:00PM',
         Space: 15
     },
     {
         id: 2,
         name: 'Cosmatic Protection',
-        time: '11:00AM - 12:00PM',
+        time: '12:00PM - 2:00PM',
         Space: 10
     },
     {
         id: 3,
         name: 'Cavity Protection',
-        time: '11:00AM - 12:00PM',
+        time: '2:00PM - 4:00PM',
         Space: 5
     },
     {
         id: 4,
-        name: 'Cavity Protection',
-        time: '11:00AM - 12:00PM',
+        name: 'Teeth Protection',
+        time: '4:00PM - 6:00PM',
         Space: 8
     },
     {
         id: 5,
-        name: 'Cavity Protection',
-        time: '11:00AM - 12:00PM',
+        name: 'Cosmatic Protection',
+        time: '6:00PM - 8:00PM',
         Space: 6
     },
     {
         id: 6,
         name: 'Cavity Protection',
-        time: '11:00AM - 12:00PM',
+        time: '9:00PM - 11:00PM',
         Space: 5
     }
 ]
