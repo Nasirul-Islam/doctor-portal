@@ -1,12 +1,11 @@
 import { Alert, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import { NavLink, useLocation, useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import login from '../../../images/login.png';
 
 const Register = () => {
     const [loginData, setLoginData] = useState({});
-    const location = useLocation();
     const history = useHistory();
     const { user, authError, registerUser, isloding } = useAuth();
 

@@ -2,7 +2,6 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
-import { Box } from '@mui/system';
 
 const Review = ({ data }) => {
     const { description, address, img, name } = data;
