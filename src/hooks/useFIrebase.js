@@ -24,7 +24,7 @@ const useFirebase = () => {
   const auth = getAuth();
   const Googleprovider = new GoogleAuthProvider();
 
-  const registerUser = (email, password, name, history) => {
+  const registerUser = (email, password, name, navigate) => {
     setIsloding(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -37,9 +37,9 @@ const useFirebase = () => {
         updateProfile(auth.currentUser, {
           displayName: name,
         })
-          .then(() => {})
-          .catch((error) => {});
-        history.replace("/");
+          .then(() => { })
+          .catch((error) => { });
+        navigate("/");
       })
       .catch((error) => {
         setAuthError(error.message);
@@ -47,12 +47,12 @@ const useFirebase = () => {
       .finally(() => setIsloding(false));
   };
 
-  const loginUser = (email, password, location, history) => {
+  const loginUser = (email, password, location, navigate) => {
     setIsloding(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const distination = location?.state?.from || "/";
-        history.push(distination);
+        navigate(distination);
         setAuthError("");
       })
       .catch((error) => {
@@ -61,7 +61,7 @@ const useFirebase = () => {
       .finally(() => setIsloding(false));
   };
 
-  const signInwithGoogle = (location, history) => {
+  const signInwithGoogle = (location, navigate) => {
     setIsloding(true);
     signInWithPopup(auth, Googleprovider)
       .then((result) => {
@@ -69,7 +69,7 @@ const useFirebase = () => {
         saveUser(user.email, user.displayName, "PUT");
         setAuthError("");
         const distination = location?.state?.from || "/";
-        history.push(distination);
+        navigate(distination);
       })
       .catch((error) => {
         setAuthError(error.message);
