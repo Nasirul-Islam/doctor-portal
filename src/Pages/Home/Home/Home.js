@@ -4,6 +4,7 @@ import Navigation from '../../Shared/Navigation/Navigation';
 import AppointmentBanner from '../AppointmentBanner/AppointmentBanner';
 import Banner from '../Banner/Banner';
 import Contact from '../Contact/Contact';
+import Doctors from '../Doctors/Doctors';
 import ExceptionalDental from '../ExceptionalDental/ExceptionalDental';
 import Services from '../Services/Services';
 import Testimonial from '../Testimonial/Testimonial';
@@ -16,6 +17,7 @@ const Home = () => {
             <Services></Services>
             <ExceptionalDental></ExceptionalDental>
             <AppointmentBanner></AppointmentBanner>
+            <Doctors></Doctors>
             <Testimonial></Testimonial>
             <Contact></Contact>
             <Footer></Footer>
