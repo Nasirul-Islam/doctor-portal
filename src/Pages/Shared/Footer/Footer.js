@@ -96,7 +96,7 @@ const Footer = () => {
                     </Grid>
                 </Grid >
             </Container >
-            <Box sx={{ my: 5 }} style={{ color: 'gray' }}>
+            <Box sx={{ my: 5 }} style={{ color: 'gray', textAlign: 'center' }}>
                 <Typography variant="subtitle2" gutterBottom component="div">
                     Copyright 2021 All Right Reserved
                 </Typography>

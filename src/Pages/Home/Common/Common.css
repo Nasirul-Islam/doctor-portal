@@ -1,0 +1,7 @@
+.bgcolor {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, transparent 70%, #3a4255 30%);
+}

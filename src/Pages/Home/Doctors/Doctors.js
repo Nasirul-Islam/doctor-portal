@@ -1,4 +1,4 @@
-import { Container, Grid } from '@mui/material';
+import { Container, Grid, Typography, Box } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import Doctor from '../Doctor/Doctor';
 
@@ -10,9 +10,13 @@ const Doctors = () => {
             .then(data => setdoctors(data))
     }, [])
     return (
-        <div>
-            <h1>Our Doctors {doctors?.length}</h1>
-            <Container>
+        <Container sx={{ my: 8 }}>
+            <Typography
+                style={{ color: 'rgb(97 220 241)', textAlign: 'center' }}
+                sx={{ fontWeight: 600, my: 8 }} variant="h5">
+                Our Doctors
+            </Typography>
+            <Box>
                 <Grid container spacing={2}>
                     {
                         doctors?.map(doctor => <Doctor
@@ -21,8 +25,8 @@ const Doctors = () => {
                         />)
                     }
                 </Grid>
-            </Container>
-        </div>
+            </Box>
+        </Container>
     );
 };
 

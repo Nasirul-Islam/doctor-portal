@@ -12,10 +12,10 @@ import { Box } from '@mui/system';
 
 const ExceptionalDental = () => {
     return (
-        <Container sx={{ my: 5 }}>
+        <Container sx={{ my: 8 }}>
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={12} md={6}>
-                    <img style={{ width: '100%', height: 600 }} src={treatment} alt="" />
+                    <img style={{ width: '100%', height: 550 }} src={treatment} alt="" />
                 </Grid>
                 <Grid item xs={12} sm={12} md={6}
                     style={{ textAlign: 'left' }}
@@ -24,7 +24,8 @@ const ExceptionalDental = () => {
                         <Typography sx={{ fontWeight: 500 }} variant="h3" gutterBottom component="div">
                             Exceptional Dental <br /> Care, on Your Team
                         </Typography>
-                        <Typography sx={{ my: 5 }} style={{ color: '#b2adad' }} variant="body1" gutterBottom>
+                        <Typography sx={{ my: 5 }}
+                            style={{ color: '#b2adad' }} variant="body1" gutterBottom>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum
                             quasi quidem quibusdam.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum

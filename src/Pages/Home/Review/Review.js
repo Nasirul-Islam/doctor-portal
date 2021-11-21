@@ -16,7 +16,7 @@ const Review = ({ data }) => {
                         <img src={img} alt="" />
                     </Grid>
                     <Grid item xs={8} style={{ textAlign: 'left' }}>
-                        <Typography style={{ color: 'rgb(97, 220, 241)' }} variant="subtitle2" gutterBottom component="div">
+                        <Typography style={{ color: 'rgb(4 183 214)' }} variant="subtitle2" gutterBottom component="div">
                             {name}
                         </Typography>
                         <Typography variant="caption" display="block" gutterBottom>

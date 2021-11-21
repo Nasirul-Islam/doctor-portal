@@ -35,7 +35,9 @@ const Testimonial = () => {
     return (
         <Container sx={{ my: 5 }}>
             <Box style={{ textAlign: 'left' }}>
-                <Typography sx={{ fontWeight: 600 }} style={{ textTransform: 'uppercase', color: 'rgb(97, 220, 241)' }} variant="subtitle2" gutterBottom component="div">
+                <Typography
+                    style={{ color: 'rgb(97 220 241)' }}
+                    sx={{ fontWeight: 600, my: 2 }} variant="h5">
                     Testimonial
                 </Typography>
                 <Typography sx={{ fontWeight: 500 }} variant="h3" gutterBottom component="div">

@@ -2,11 +2,11 @@ import { Button, Container, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import TextField from '@mui/material/TextField';
-import appointmentBg from '../.../../../../images/appointment-bg.png';
+import appointmentBg from '../.../../../../images/appointment-bg.jpg';
 
 const contactBg = {
     background: `url(${appointmentBg})`,
-    // backgroundPosition: 'center',
+    backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundColor: 'rgba(45, 58, 74, .9)',
     backgroundBlendMode: 'darken, luminosity'
@@ -15,8 +15,10 @@ const contactBg = {
 const Contact = () => {
     return (
         <Box style={contactBg} sx={{ py: 8, my: 5 }}>
-            <Container>
-                <Typography style={{ color: 'rgb(97, 220, 241)' }} variant="subtitle2" gutterBottom component="div">
+            <Container style={{ textAlign: 'center' }}>
+                <Typography
+                    style={{ color: 'rgb(97 220 241)' }}
+                    sx={{ fontWeight: 600, my: 2 }} variant="h5">
                     CONTACT US
                 </Typography>
                 <Typography sx={{ mb: 8 }} style={{ color: 'white' }} variant="h3" gutterBottom component="div">

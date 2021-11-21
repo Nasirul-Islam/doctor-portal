@@ -5,10 +5,6 @@ import bg from '../../../images/bg.png';
 import { Button, Typography, Container } from '@mui/material';
 import { Box } from '@mui/system';
 
-const bannerBg = {
-    background: `url(${bg})`
-}
-
 const varticalCenter = {
     display: 'flex',
     alignItems: 'center',
@@ -17,11 +13,11 @@ const varticalCenter = {
 
 const Banner = () => {
     return (
-        <Container style={bannerBg} sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2}>
+        <Container sx={{ flexGrow: 1, mt: 4 }}>
+            <Grid container spacing={5}>
                 <Grid item style={{ ...varticalCenter, textAlign: 'left' }} xs={12} md={6}>
                     <Box>
-                        <Typography variant="h3">
+                        <Typography sx={{ fontWeight: 500 }} variant="h3">
                             Your New Smail <br />
                             Starts Here
                         </Typography>
@@ -32,7 +28,7 @@ const Banner = () => {
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={6} style={varticalCenter}>
-                    <img style={{ width: '400px' }} src={chair} alt="" />
+                    <img style={{ width: '500px' }} src={chair} alt="" />
                 </Grid>
             </Grid>
         </Container>

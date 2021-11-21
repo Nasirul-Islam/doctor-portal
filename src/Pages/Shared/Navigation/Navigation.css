@@ -1,0 +1,9 @@
+.NavLink {
+    text-decoration: none;
+    color: rgb(60, 192, 216);
+    margin-left: 15px;
+}
+
+.NavLink button{
+    font-weight: 700;
+}
